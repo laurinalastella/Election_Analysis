@@ -42,7 +42,7 @@ with open(file_to_load) as election_data:
 
 # Print/Read the header row.
     headers = next(file_reader)
-#    print(headers)
+    print(headers)
 
 # Print each row in the CSV file.
     for row in file_reader:
@@ -119,6 +119,7 @@ with open(file_to_save, "w") as txt_file:
 
     # Save the winning candidate's name to the text file.
     txt_file.write(winning_candidate_summary)
+
 
 
 
